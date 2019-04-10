@@ -19,44 +19,33 @@ public class NaEkran1 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Herzich willkommen in TV-Abteilung! \n");
+        println("Herzich willkommen in TV-Abteilung! \n");
 
-        System.out.println("Heute haben wir einen " + Tv1 + " fuer den Preis von " + preis1 + " €\n" + Tv2
+        println("Heute haben wir einen " + Tv1 + " fuer den Preis von " + preis1 + " €\n" + Tv2
                 + "-Smart-TV, fuer den Preis von " + preis2 + " € \n" + Tv3 + "-Smart-TV, fuer den Preis von " + preis3
                 + " € \n");
 
-        System.out.println("Was gefällt Sie am besten? " + "Bitte eingeben:"
+        println("Was gefällt Sie am besten? " + "Bitte eingeben:"
                 + "\n 1 = Philips, \n 2 = Samsung oder \n 3 = Panasonic \n");
 
         int bestellung = scanner.nextInt();
-//        println("Auswahl: " + );
-        if (bestellung == 1) {
-            println("Eine gute Wahl! \n");
-            println("Haben Sie eine Kundenkarte? " + "Bitte eingeben:" + "\n Y = Ja, oder N = Nein \n");
-        }
+        println("Eine gute Wahl! \n");
+        println("Haben Sie eine Kundenkarte? " + "Bitte eingeben:" + "\n Y = Ja, oder N = Nein \n");
 
         if (askBool()) {
+            double discount = 0.15;
+            double discountPrice = preis1 - preis1 * discount;
             println("Super! Sie bekommen zusätzlich noch 15%-Rabbatt, "
-                    + "\n den aktuellen Preis beträgt dann " + (preis1 - preis1 * 0.15) + " € \n");
+                    + "\n den aktuellen Preis beträgt dann " + String.format("%.2f", discountPrice) + " € \n");
             println("Suchen Sie nach Ihrer individuellen Finanzierung? \n"
                     + "Bitte eingeben: Y = Ja, oder N = Nein \n");
-        } else {
-            println("Sie können den Betrag " + (preis1 - preis1 * 0.15) + " € direkt an der Kasse bezahlen?");
-        }
-
-        if (askBool()) {
-            println("Bitte, wenden Sie sich direkt an die Kreditabteilung!");
+            if (askBool()) {
+                println("Bitte, wenden Sie sich direkt an die Kreditabteilung!");
+            } else {
+                println("Sie können den Betrag " + String.format("%.2f", discountPrice) + " € direkt an der Kasse bezahlen?");
+            }
         } else {
             println("Sie können den Betrag " + preis1 + " € direkt an der Kasse bezahlen?");
-            if (bestellung == 2) {
-                println("Eine gute Wahl! \n");
-                println("Haben Sie eine Kundenkarte? " + "Bitte eingeben:" + "\n Y = Ja, oder N = Nein \n");
-            }
-
-            if (bestellung == 3) {
-                println("Eine gute Wahl! \n");
-                println("Haben Sie eine Kundenkarte? " + "Bitte eingeben:" + "\n Y = Ja, oder N = Nein \n");
-            }
         }
     }
 
