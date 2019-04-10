@@ -3,38 +3,40 @@ import java.util.Scanner;
 public class NaEkran1 {
 
     public static void main(String[] args) {
-        String Tv1 = "Philips Smart-TV";
-        String Tv2 = "Samsung Smart-TV";
-        String Tv3 = "Panasonic Smart-TV";
+        String[] TvList = {
+                "Philips Smart-TV",
+                "Samsung Smart-TV",
+                "Panasonic Smart-TV"};
 
-        double preis1 = 399.99;
-        double preis2 = 419.99;
-        double preis3 = 549.99;
-
-        //double preis = 0;
-
-        int id1 = 1;
-        int id2 = 2;
-        int id3 = 3;
+        double[] preisList = {
+                399.99,
+                419.99,
+                549.99};
 
         Scanner scanner = new Scanner(System.in);
 
         println("Herzich willkommen in TV-Abteilung! \n");
+        for (int index = 0; index < TvList.length; index++) {
+            println("Heute haben wir einen (" + (index + 1) + "): " + TvList[index] + " fuer den Preis von " + preisList[index] + " €");
+        }
 
-        println("Heute haben wir einen " + Tv1 + " fuer den Preis von " + preis1 + " €\n" + Tv2
-                + "-Smart-TV, fuer den Preis von " + preis2 + " € \n" + Tv3 + "-Smart-TV, fuer den Preis von " + preis3
-                + " € \n");
+        println("Was gefällt Sie am besten? " + "Bitte nummer eingeben:");
 
-        println("Was gefällt Sie am besten? " + "Bitte eingeben:"
-                + "\n 1 = Philips, \n 2 = Samsung oder \n 3 = Panasonic \n");
+        int bestellung;
+        do {
+            bestellung = scanner.nextInt();
+        } while (bestellung < 1 || bestellung > 3);
 
-        int bestellung = scanner.nextInt();
-        println("Eine gute Wahl! \n");
+        println(TvList[bestellung - 1]);
+        println("Eine gute Wahl!");
+        double preis = preisList[bestellung - 1];
+        println(preis + " €");
+
         println("Haben Sie eine Kundenkarte? " + "Bitte eingeben:" + "\n Y = Ja, oder N = Nein \n");
 
         if (askBool()) {
             double discount = 0.15;
-            double discountPrice = preis1 - preis1 * discount;
+            double discountPrice = preis - preis * discount;
             println("Super! Sie bekommen zusätzlich noch 15%-Rabbatt, "
                     + "\n den aktuellen Preis beträgt dann " + String.format("%.2f", discountPrice) + " € \n");
             println("Suchen Sie nach Ihrer individuellen Finanzierung? \n"
@@ -45,7 +47,7 @@ public class NaEkran1 {
                 println("Sie können den Betrag " + String.format("%.2f", discountPrice) + " € direkt an der Kasse bezahlen?");
             }
         } else {
-            println("Sie können den Betrag " + preis1 + " € direkt an der Kasse bezahlen?");
+            println("Sie können den Betrag " + preis + " € direkt an der Kasse bezahlen?");
         }
     }
 
