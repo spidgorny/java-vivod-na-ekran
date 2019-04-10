@@ -1,0 +1,40 @@
+"C:\Program Files\Java\jdk1.8.0_131\bin\java.exe" "-javaagent:C:\Users\depidsvy\AppData\Roaming\JetBrains\IntelliJ IDEA Community Edition 183.2407.10\lib\idea_rt.jar=52039:C:\Users\depidsvy\AppData\Roaming\JetBrains\IntelliJ IDEA Community Edition 183.2407.10\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Users\depidsvy\web\slawa2019\java-vivod-na-ekran\bin;C:\Users\depidsvy\AppData\Roaming\JetBrains\IntelliJ IDEA Community Edition 183.2407.10\lib\groovy-all-2.4.15.jar" NaEkran1
+Herzich willkommen in TV-Abteilung!
+
+Heute haben wir einen (1): Philips Smart-TV fuer den Preis von 399.99 €
+Heute haben wir einen (2): Samsung Smart-TV fuer den Preis von 419.99 €
+Heute haben wir einen (3): Panasonic Smart-TV fuer den Preis von 549.99 €
+Was gefällt Sie am besten? Bitte nummer eingeben:
+0
+Enter only numbers 1-3
+-1
+Enter only numbers 1-3
+b
+Enter only numbers 1-3
+55
+Enter only numbers 1-3
+4
+Enter only numbers 1-3
+-
+Enter only numbers 1-3
+0
+Enter only numbers 1-3
+3
+Enter only numbers 1-3
+Panasonic Smart-TV
+Eine gute Wahl!
+549.99 €
+Haben Sie eine Kundenkarte? Bitte eingeben:
+ Y = Ja, oder N = Nein
+
+j
+Super! Sie bekommen zusätzlich noch 15%-Rabbatt,
+ den aktuellen Preis beträgt dann 467,49 €
+
+Suchen Sie nach Ihrer individuellen Finanzierung?
+Bitte eingeben: Y = Ja, oder N = Nein
+
+j
+Bitte, wenden Sie sich direkt an die Kreditabteilung!
+
+Process finished with exit code 0
