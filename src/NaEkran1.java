@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class NaEkran1 {
@@ -22,10 +23,16 @@ public class NaEkran1 {
 
         println("Was gefällt Sie am besten? " + "Bitte nummer eingeben:");
 
-        int bestellung;
+        int bestellung = 0;
         do {
-            bestellung = scanner.nextInt();
-        } while (bestellung < 1 || bestellung > 3);
+            try {
+                scanner = new Scanner(System.in);
+                bestellung = scanner.nextInt();
+            } catch (InputMismatchException e) {
+//                println("Enter only numbers 1-" + TvList.length);
+            }
+            println("Enter only numbers 1-" + TvList.length);
+        } while (bestellung < 1 || bestellung > TvList.length);
 
         println(TvList[bestellung - 1]);
         println("Eine gute Wahl!");
